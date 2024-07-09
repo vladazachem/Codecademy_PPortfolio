@@ -293,12 +293,7 @@ header {
 
 /*Footer*/
 
-footer {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.footer-padd {
+.footer-align {
     display: flex;
     justify-content: right;
 }
@@ -308,7 +303,7 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     gap: 40px;
-    padding-bottom: 20px;
+    padding-block: 40px 20px;
 }
 
 .madeby {

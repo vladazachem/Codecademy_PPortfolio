@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./logo.png">
+    <link rel="stylesheet" href="./style-proj.css">
     <title>Kuluar Project | Vlada Sarokina | Freelance Front-End Developer & Web Designer</title>
 </head>
 <body>
-    <header class="navigation">
-        <h3>Hi, I'm <b id="myname">Vlada</b></h3>
-        <ul>
-            <li><a class="nav-link" href="#">Home</a></li>
-            <li><a class="nav-link" href="#">About me</a></li>
-        </ul>
+    <header class="global-padding navigation">
+        <h3> Hi, I'm <b class="myname">Vlada</b></h3>
+        <ul class="navbar">
+            <li><a href="/index.html" class="nav-link">Home</a></li>        </ul>
     </header>
-    <main>
+
+
+    <main class="global-padding project">
         <section class="intro-project">
             <div id="preview"></div>
             <div id="description">
@@ -36,33 +41,36 @@
                 <h5>The main task was to redesign the website for Kuluar Travel Agency.</h5>
                 <h5>The main issue with the old site was the excessive amount of information on the pages, leading to a high level of information noise.</h5>
             </div>
+        </section>
 
+        <section class="proj-overv-2">
             <div id="proj-prev"></div>
 
             <div class="btn-wrap">
-                <a id="btn-inline" href="#">
-                    <div id="btn-txt">Open project</div>
-                    <div id="btn-arr"></div>
-                </a>
+                <button href="#" class="arrow-link" type="button">Open project<span class="arrow"></span></button>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div id="feel-free">
-                <h6>Please feel free to share your project details with me. I would be happy to assist you with your website.</h6>
-            </div>
 
-            <div class="contact">
-                <div id="myemail">
-                    <h5>vladyslavasarokina@gmail.com</h5>
+    <footer class="global-padding">
+        <div class="footer-align">
+            <div class="content">
+                <div id="feel-free">
+                    <h5>Please feel free to share your project details with me.</h5>
+                    <h5>I would be happy to assist you with your website.</h5>
                 </div>
-                <div id="contact-link">
-                    <h5>Instagram</h5>
-                </div>
-                <div id="contact-link">
-                    <h5>Behance</h5>
+
+                <div class="contact">
+                    <div id="myemail">
+                        <h5>vladyslavasarokina@gmail.com</h5>
+                    </div>
+                    <div id="contact-link">
+                        <h5><a href="https://www.instagram.com/vladazachem" class="inst">Instagram</a></h5>
+                    </div>
+                    <div id="contact-link">
+                        <h5><a href="https://www.behance.net/vladasarokina" class="behance">Behance</a></h5>
+                    </div>
                 </div>
             </div>
         </div>
