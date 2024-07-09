@@ -1,0 +1,534 @@
+/*General*/
+
+:root {
+    --main: #EDE8E4;
+    --text: #181410;
+    --blue: #2570BB;
+    --red: #F06543;
+}
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--main);
+}
+
+.global-padding {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/*Text styles*/
+
+h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 125px;
+    color: var(--text);
+}
+
+h2 {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 60px;
+    color: var(--text);
+}
+
+h3 {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--text);
+}
+
+h4 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 21px;
+    color: var(--text);
+}
+
+h5 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text);
+}
+
+h6 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text);
+}
+
+
+/*Navigation bar*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    gap: 58px;
+    justify-content: center;
+}
+
+.nav-link {
+    display: flex;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--text);
+    width: 100px;
+    justify-content: center;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.myname {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--text);
+}
+
+.myname::before {
+    content: "";
+    width: 95px;
+    background-color: var(--text);
+    height: 1px;
+    position: absolute;
+    top: 68px;
+}
+
+
+/*Intro*/
+
+.intro {
+    display: block;
+    padding: 130px 0px 140px 0px;
+    z-index: 2;
+}
+
+.line-intro {
+    padding: 20px 0px;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+}
+
+#lower-case-itro {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 60px;
+}
+
+#point {
+    z-index: 0;
+    position: absolute;
+    top: 380px;
+    right: 50px;
+}
+
+
+/*All works*/
+
+#myworks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 150px 0px 300px 0px;
+}
+
+#myworks #section-name {
+    padding-bottom: 150px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.preview {
+    height: 270px;
+}
+
+.preview img {
+    border-radius: 20px;
+}
+
+.preview.hide {
+    display: none;
+}
+
+#project-links {
+    padding-left: 180px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 430px;
+}
+
+.list li a {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--text);
+}
+
+.list li a:hover,
+.list li a:active {
+    color: var(--red);
+    font-weight: 600;
+    transition: ease;
+}
+
+
+/*About me*/
+
+#point-animation {
+    z-index: 0;
+    position: absolute;
+    right: 70px;
+    top: 2400px;
+}
+
+.about-section {
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.about-section #section-name {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+}
+
+#text-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 52%;
+}
+
+.languages {
+    font-weight: 600;
+}
+
+.facts {
+    padding-top: 120px;
+}
+
+.facts h4 {
+    font-weight: 600;
+}
+
+#software-skill,
+#education {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#software-skill {
+    padding-bottom: 50px;
+}
+
+#education {
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+#skill-list,
+#edu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+#skill-list ul,
+#edu-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 18px;
+}
+
+
+@keyframes eye {
+    to {
+        transform: rotate(-40deg);
+    }
+}
+
+#point-animation {
+    animation: eye 4s cubic-bezier(.67,.09,.01,1.68) infinite alternate;
+    transform-origin: center center;
+}
+
+
+
+/*Footer*/
+
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-padd {
+    display: flex;
+    justify-content: right;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+
+.madeby {
+    display: flex;
+    justify-content: center;
+}
+
+#feel-free h5 {
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-link a {
+    color: var(--text);
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+    background: #c5c4c4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text);
+}
+
+
+@media only screen and (max-width: 1700px) {
+    #point {
+        width: 300px;
+        height: 300px;
+        top: 400px;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    #point {
+        width: 280px;
+        height: 280px;
+        top: 380px;
+    }
+}
+
+
+@media only screen and (max-width: 1134px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    #point {
+        width: 250px;
+        height: 250px;
+        top: 360px;
+    }
+}
+
+
+@media only screen and (max-width: 970px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #lower-case-itro{
+        font-size: 40px;
+    }
+
+    #point {
+        width: 200px;
+        height: 200px;
+        top: 330px;
+    }
+
+    .previews {
+        display: none;
+    }
+
+    #project-links {
+        height: 270px;
+        padding-left: 0px;
+    }
+
+    #point-animation {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 784px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    #point {
+        width: 150px;
+        height: 150px;
+        top: 330px;
+    }
+
+    #point-animation {
+        width: 150px;
+        height: 150px;
+        top: 2500px
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .list li a {
+        font-size: 25px;
+    }
+
+    #lower-case-itro{
+        font-size: 30px;
+    }
+
+    #point {
+        width: 100px;
+        height: 100px;
+        top: 330px;
+    }
+
+    #point-animation {
+        display: none;
+    }
+
+    #text-about {
+        width: fit-content;
+    }
+
+    .footer-padd {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+    
+    #lower-case-itro{
+        font-size: 25px;
+    }
+
+    h3,
+    .myname {
+        font-size: 20px;
+    }
+
+    .myname::before {
+        content: "";
+        width: 65px;
+        background-color: var(--text);
+        height: 1px;
+        position: absolute;
+        top: 60px;
+    }   
+    
+    #point {
+        width: 100px;
+        height: 100px;
+        top: 290px;
+    }
+
+    #skill-list,
+    #edu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    h1,
+    h2 {
+        font-size: 25px;
+    }
+
+    #lower-case-itro{
+        font-size: 20px;
+    }
+
+    #point {
+        width: 90px;
+        height: 90px;
+        top: 280px;
+    }
+
+    #skill-list ul, 
+    #edu-list ul {
+        font-size: 16px;
+    }
+}
