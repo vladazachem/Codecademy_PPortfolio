@@ -311,6 +311,12 @@ header {
     justify-content: center;
 }
 
+#feel-free {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
 #feel-free h5 {
     font-weight: 600;
 }
@@ -424,6 +430,14 @@ header {
         height: 150px;
         top: 2500px
     }
+
+
+    #edu-list ul {
+        font-size: 16px;
+        justify-content: space-between;
+    }
+
+
 }
 
 
@@ -478,7 +492,8 @@ header {
         font-size: 25px;
     }
 
-    h3,
+    h3, 
+    h4,
     .myname {
         font-size: 20px;
     }
@@ -491,6 +506,10 @@ header {
         position: absolute;
         top: 60px;
     }   
+
+    .list li a {
+        font-size: 22px;
+    }
     
     #point {
         width: 100px;
@@ -498,11 +517,14 @@ header {
         top: 290px;
     }
 
-    #skill-list,
-    #edu-list {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+
+
+    #feel-free {
+        align-items: center;
+    }
+
+    .contact {
+        align-items: center;
     }
 }
 

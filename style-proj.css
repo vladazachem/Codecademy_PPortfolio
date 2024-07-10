@@ -375,7 +375,7 @@ header {
     }
 }
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     h5 {
         font-size: 16px;
     }
@@ -415,4 +415,4 @@ header {
 
 @media only screen and (max-width: 530px) {
 
-} */
+}
