@@ -130,7 +130,7 @@ header {
 }
 
 #preview {
-    background-image: url(./kuluar-L.jpg);
+    background-image: url(./img/kuluar/kuluar-L.jpg);
     height: 510px;
     width: 759px;
     border-radius: 30px;
@@ -186,7 +186,7 @@ header {
 }
 
 #proj-prev {
-    background-image: url(./kuluar-pre.jpg);
+    background-image: url(./img/kuluar/kuluar-pre.jpg);
     width: 1200px;
     height: 680px;
     border-radius: 30px;
