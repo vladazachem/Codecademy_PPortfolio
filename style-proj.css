@@ -135,6 +135,7 @@ header {
     width: 759px;
     border-radius: 30px;
     background-size: cover;
+    background-position: center;
 }
 
 #description {
@@ -190,6 +191,7 @@ header {
     height: 680px;
     border-radius: 30px;
     background-size: cover;
+    background-position: center;
 }
 
 .arrow-link {
@@ -384,20 +386,32 @@ header {
         width: 550px;
         height: 310px;
     }
-
-    #preview {
-        height: 350px;
-    }
 }
 
 
 @media only screen and (max-width: 600px) {
+    #preview {
+        border-radius: 15px;
+    }
+
+    #proj-prev {
+        width: 480px;
+        height: 270px;
+        border-radius: 15px;
+    }
+
+    .proj-overv {
+        flex-direction: column;
+    }
+
     .footer-padd {
         justify-content: space-between;
     }
 }
 
 @media only screen and (max-width: 530px) {
+    h3, 
+    h4,
     .myname {
         font-size: 20px;
     }
@@ -411,8 +425,20 @@ header {
         top: 60px;
     }   
 
-}
+    #preview {
+        height: 340px;
+    }
 
-@media only screen and (max-width: 530px) {
+    #proj-prev {
+        height: 340px;
+        width: 340px;
+    }
 
+    #feel-free {
+        text-align: center;
+    }
+
+    .contact {
+        align-items: center;
+    }
 }
