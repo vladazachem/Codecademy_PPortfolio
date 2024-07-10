@@ -430,14 +430,6 @@ header {
         height: 150px;
         top: 2500px
     }
-
-
-    #edu-list ul {
-        font-size: 16px;
-        justify-content: space-between;
-    }
-
-
 }
 
 
@@ -485,17 +477,27 @@ header {
 @media only screen and (max-width: 530px) {
     h1,
     h2 {
-        font-size: 30px;
-    }
-    
-    #lower-case-itro{
-        font-size: 25px;
+        font-size: 28px;
     }
 
     h3, 
     h4,
     .myname {
         font-size: 20px;
+    }
+
+    #lower-case-itro{
+        font-size: 25px;
+    }
+
+    #point {
+        width: 100px;
+        height: 100px;
+        top: 375px;
+    }
+
+    .intro {
+        padding: 220px 0px 220px 0px
     }
 
     .myname::before {
@@ -510,42 +512,31 @@ header {
     .list li a {
         font-size: 22px;
     }
-    
-    #point {
-        width: 100px;
-        height: 100px;
-        top: 290px;
+
+    #skill-list,
+    #edu-list {
+        gap: 20px;
     }
 
+    #skill-list ul,
+    #edu-list ul {
+        gap: 40px;
+        font-size: 15px;
+    }
 
+    #skill-list ul li {
+        height: 30px;
+    }
+
+    #edu-list ul li {
+        height: 50px;
+    }
 
     #feel-free {
-        align-items: center;
+        text-align: center;
     }
 
     .contact {
         align-items: center;
-    }
-}
-
-@media only screen and (max-width: 530px) {
-    h1,
-    h2 {
-        font-size: 25px;
-    }
-
-    #lower-case-itro{
-        font-size: 20px;
-    }
-
-    #point {
-        width: 90px;
-        height: 90px;
-        top: 280px;
-    }
-
-    #skill-list ul, 
-    #edu-list ul {
-        font-size: 16px;
     }
 }
