@@ -129,15 +129,6 @@ header {
     width: 759px;
 }
 
-#preview {
-    background-image: url(./img/kuluar/kuluar-L.jpg);
-    height: 510px;
-    width: 759px;
-    border-radius: 30px;
-    background-size: cover;
-    background-position: center;
-}
-
 #description {
     display: flex;
     flex-direction: row;
@@ -159,6 +150,13 @@ header {
 
 /***/
 
+.overview-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
 .proj-overv {
     padding-block: 140px 140px;
     display: flex;
@@ -176,23 +174,6 @@ header {
 }
 
 /***/
-
-.proj-overv-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    align-items: center;
-    padding-inline: 50px;
-}
-
-#proj-prev {
-    background-image: url(./img/kuluar/kuluar-pre.jpg);
-    width: 1200px;
-    height: 680px;
-    border-radius: 30px;
-    background-size: cover;
-    background-position: center;
-}
 
 .arrow-link {
     display: flex;
@@ -326,29 +307,12 @@ header {
     .proj-overv {
         gap: 40px;
     }
-
-    #proj-prev {
-        width: 1000px;
-        height: 600px;
-    }
 }
 
 
 @media only screen and (max-width: 1134px) {
-    #proj-prev {
-        width: 900px;
-        height: 500px;
-    }
     .proj-overv {
         width: 90%;
-    }
-}
-
-
-@media only screen and (max-width: 970px) {
-    #proj-prev {
-        width: 800px;
-        height: 450px;
     }
 }
 
@@ -357,23 +321,8 @@ header {
         width: 100%;
     }
 
-    #preview {
-        width: 100%;
-        height: 450px;
-    }
-
-    #proj-prev {
-        width: 1;
-        height: 450px;
-    }
-
     .proj-overv {
         width: 100%;
-    }
-
-    #proj-prev {
-        width: 650px;
-        height: 365px;
     }
 }
 
@@ -381,25 +330,10 @@ header {
     h5 {
         font-size: 16px;
     }
-    
-    #proj-prev {
-        width: 550px;
-        height: 310px;
-    }
 }
 
 
 @media only screen and (max-width: 600px) {
-    #preview {
-        border-radius: 15px;
-    }
-
-    #proj-prev {
-        width: 480px;
-        height: 270px;
-        border-radius: 15px;
-    }
-
     .proj-overv {
         flex-direction: column;
     }
@@ -410,6 +344,10 @@ header {
 }
 
 @media only screen and (max-width: 530px) {
+    .global-padding {
+        padding-inline: 30px;
+    }
+    
     h3, 
     h4,
     .myname {
@@ -424,15 +362,6 @@ header {
         position: absolute;
         top: 60px;
     }   
-
-    #preview {
-        height: 340px;
-    }
-
-    #proj-prev {
-        height: 340px;
-        width: 340px;
-    }
 
     #feel-free {
         text-align: center;

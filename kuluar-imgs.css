@@ -1,0 +1,74 @@
+#preview {
+    background-image: url(./img/kuluar/kuluar-L.jpg);
+    height: 510px;
+    width: 759px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+#proj-prev {
+    background-image: url(./img/kuluar/kuluar-pre.jpg);
+    width: 1200px;
+    height: 680px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    #proj-prev {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+
+@media only screen and (max-width: 1134px) {
+    #proj-prev {
+        height: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 970px) {
+    #proj-prev {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #preview {
+        width: 100%;
+        height: 450px;
+    }
+
+    #proj-prev {
+        height: 365px;
+    }
+}
+
+@media only screen and (max-width: 700px) {    
+    #proj-prev {
+        height: 310px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #preview {
+        border-radius: 15px;
+    }
+
+    #proj-prev {
+        height: 270px;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #preview,
+    #proj-prev {
+        height: 340px;
+    }
+}
