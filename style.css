@@ -173,6 +173,8 @@ header {
 
 .preview img {
     border-radius: 20px;
+    width: 270px;
+    height: 270px;
 }
 
 .preview.hide {
