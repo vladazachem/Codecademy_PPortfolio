@@ -204,7 +204,7 @@ header {
     position: relative;
     transform: rotate(-45deg);
     margin-left: 8px;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in;
   }
   
   .arrow-link > .arrow::before {
@@ -217,7 +217,7 @@ header {
     opacity: 0;
     bottom: calc(-2px / 2);
     transform: rotate(45deg);
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in;
     content: "";
     right: 0;
   }
