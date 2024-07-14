@@ -18,8 +18,7 @@
 
 .global-padding {
     padding-top: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-inline: 50px;
 }
 
 
